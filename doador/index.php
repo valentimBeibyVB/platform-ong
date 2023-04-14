@@ -173,14 +173,11 @@
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Resgistra-se</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Faça a sua doação</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-bdy">
                 <div class="col-lg-12">
-                    <div class="text-center">
-                        <h3 class="h4 text-gray-700 mb-4">Dadas para usuario</h3>
-                    </div>
                     <form class="user" action="" method="post">
                         <!-- <div class="form-group row"> -->
                         <div class="col-sm-2">
@@ -190,42 +187,23 @@
                             </select>
                         </div>
                             <div class="form-group">
-                                <input type="text" class="form-control form-control-user" name="nome" id="nome" placeholder="Nome">
+                                <input type="text" class="form-control form-control-user" name="nome" id="nome" placeholder="Ensira informação sobre o artigo que predente doar">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control form-control-user" name="email" id="email" placeholder="Email">
+                                <input type="text" class="form-control form-control-user" name="email" id="email" placeholder="quantidade">
                             </div>
                         <div class="form-group row">
                             <div class="form-group">
-                                <input type="password" class="form-control form-control-user" name="senha" id="exampleInputPassword" placeholder="Senha">
+                                <input type="text" class="form-control form-control-user" name="senha" id="exampleInputPassword" placeholder="Imagem">
                             </div>
                         </div>
                         <div class="text-center">
                             <h3 class="h4 text-gray-900 mb-4">Dados Pessoais</h3>
                         </div>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-user" name="nomeC" id="exampleInputPassword" placeholder="Nome completo">
-                        </div>   
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-user" name="BI" id="BI" placeholder="Número do Bilhete">
-                        </div>                                 
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-user" name="Telefone" id="exampleInputPassword" placeholder="Telefone">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-user" name="Endereno" id="Enderenço" placeholder="Enderenço">
-                        </div>
                         <input type="submit"  name="registo" class="btn-primary btn-user btn-block" value="Criar Usuario">           
                         <hr>
                     </form>
-                    <div><?php echo isset($alerta) ? $alerta : '';?></div>       
-                    <div class="text-center">
-                        <a class="small" href="logar.php">Já enho uma conta</a>
-                    </div>
-                    <div class="text-center">
-                        <a class="small" href="index.php">Voltar a página inicial</a>
-                    </div>
                 </div>           
             </div>
         </div>
