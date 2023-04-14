@@ -194,14 +194,10 @@
                             </div>
                         <div class="form-group row">
                             <div class="form-group">
-                                <input type="text" class="form-control form-control-user" name="senha" id="exampleInputPassword" placeholder="Imagem">
+                                <input type="file" class="form-control form-control-user" name="senha" id="exampleInputPassword" placeholder="Imagem">
                             </div>
                         </div>
-                        <div class="text-center">
-                            <h3 class="h4 text-gray-900 mb-4">Dados Pessoais</h3>
-                        </div>
-
-                        <input type="submit"  name="registo" class="btn-primary btn-user btn-block" value="Criar Usuario">           
+                        <input type="submit"  name="" class="btn-primary btn-user btn-block" value="Doar">           
                         <hr>
                     </form>
                 </div>           
