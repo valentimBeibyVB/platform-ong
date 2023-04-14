@@ -181,7 +181,7 @@
                     <form class="user" action="" method="post">
                         <!-- <div class="form-group row"> -->
                         <div class="col-sm-2">
-                            <select class="form-group" id="doador" name="doador" class="form-select">
+                            <select class=" form-control form-control-user form-select form-group" id="doador" name="doador">
                             <option value="1">Vestuario</option>
                             <option value="2">Alimentação</option>
                             </select>
@@ -194,7 +194,7 @@
                             </div>
                         <div class="form-group row">
                             <div class="form-group">
-                                <input type="file" class="form-control form-control-user" name="senha" id="exampleInputPassword" placeholder="Imagem">
+                                <input type="file" class="form-control form-control-user" name="" id="" value="Doar">
                             </div>
                         </div>
                         <input type="submit"  name="" class="btn-primary btn-user btn-block" value="Doar">           
