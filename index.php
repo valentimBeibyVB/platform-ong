@@ -121,7 +121,7 @@
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <img src="public/assets/img/slide/remar.jpg" class="img-fluid" alt=""> <br>
+                        <img src="public/assets/img/slide/remarS.jpg" class="img-fluid" alt=""> <br>
 
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 content">

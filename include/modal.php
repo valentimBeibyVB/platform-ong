@@ -84,7 +84,7 @@
                         <hr>
                     </form>
                     <div>
-                        <?php echo isset($alerta) ? $alerta : ''; ?>
+                        <!-- <?php //echo isset($alerta) ? $alerta : ''; ?> -->
                     </div>
                     <div class="text-center">
                         <a class="small" href="logar.php">Já enho uma conta</a>

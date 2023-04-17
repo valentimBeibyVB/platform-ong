@@ -336,8 +336,8 @@ body {
   --------------------------------------------------------------*/
   #hero {
     width: 100%;
-    height: 70vh;
-    background-color: rgba(2, 2, 2, 0.8);
+    height: 50vh;
+    background-color: rgba(2, 2, 2, 0.91);
     overflow: hidden;
     padding: 0;
     margin-bottom: -120px;
@@ -347,7 +347,7 @@ body {
   
   #hero .carousel-item {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -356,7 +356,7 @@ body {
   
   #hero .carousel-item::before {
     content: "";
-    background-color: rgba(240, 10, 10, 0);
+    background-color: rgba(240, 10, 10, 0.359);
     position: absolute;
     top: 0;
     right: 0;
@@ -388,15 +388,13 @@ body {
   }
   
   #hero h2 span {
-    color: #ffffff;
+    color: #2e2e2e;
   }
   
   #hero p {
-    width: 100%;
-    -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
     margin: 0 auto 30px auto;
-    color:#fff;
+    color:#2e2e2e;
   }
   
   #hero .carousel-inner .carousel-item {
