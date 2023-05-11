@@ -7,12 +7,12 @@
                 <div class="carousel-inner" role="listbox">
 
                     <!-- Slide 1 -->
-                    <div class="carousel-item active" style="background-image: url(assets/img/slide/bannerr.jpg)">
+                    <div class="carousel-item active" style="background-image: url(assets/img/slide/remar2.jpg)">
                         <div class="carousel-container">
-                            <div class="carousel-content">
-                                <!-- <h2  class="animate__animated animate__fadeInDown"> Essa é <span style="color:#2e2e2e;">Remar</span></h2>
-                                <p style="color:#2e2e2e;" class="animate__animated animate__fadeInUp">Uma Oganização não Governamental, Humanitaria e sem Fins lucrativos, fundada a 04 de jullho de 2012 com projectos enraizados no humanismoe no verdadeiro amor ao próximo</p> -->
-                                <a href="#" style="background: #fff; color:#8cb63a;" class="btn-get-started animate__animated animate__fadeInUp">Saiba Mais</a>
+                            <div class="carousel-content"> 
+                                <h2  style="color:#fff"class="animate__animated animate__fadeInDown"> Essa é <span style="color:#8cb63a">Remar</span></h2>
+                                <p style="color:#fff" class="animate__animated animate__fadeInUp">Uma Oganização não Governamental, Humanitaria e sem Fins lucrativos, fundada a 04 de jullho de 2012 com projectos enraizados no humanismoe no verdadeiro amor ao próximo</p>
+                                <a href="#" class="btn-get-started animate__animated animate__fadeInUp">Saiba Mais</a>
                             </div>
                         </div>
                     </div>

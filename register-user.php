@@ -25,9 +25,9 @@ if (isset($_POST)) {
         $resultado = mysqli_fetch_array($query);
 
         if ($resultado > 0) {
-            $message = ['success' => false, 'message' => 'E-mail already exists.'];
+            // $message = ['success' => false, 'message' => 'E-mail Já cadastrado.'];
         } else {
-            $query_ensirir = mysqli_query($conexao, "call PdCadastrar_Doador('$nome','$email','$senha','$nomeC','$BI','$Telefone','$Enderenco','2')");
+            $query_ensirir = mysqli_query($conexao, "call PdCadastrar_Doador('$nome','$email','$senha','$nomeC','$BI','$Telefone','$Enderenco')");
             if ($query_ensirir) {
                 $message = ['success' => true, 'message' => 'Usuário cadastrado com sucesso.'];
             } else {

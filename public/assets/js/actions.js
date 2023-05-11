@@ -16,14 +16,15 @@ formRegisterUser.addEventListener('submit', (e) => {
         })
 })
 
-const formLogar = document.querySelector("#form-register-user");
+'use logar'
+const formLogar = document.querySelector("#form-logar");
 
 formRegisterUser.addEventListener('submit', (e) => {
     e.preventDefault()
     const fd = new FormData(e.currentTarget)
-    fetch('http://localhost/remar.ao/register-user.php', {
+    fetch('http://localhost/remar.ao/logar.php', {
         method: 'POST',
-        body: fd,
+        body: ld,
     })
         .then((response) => response.json())
         .then(data => {

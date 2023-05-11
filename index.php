@@ -18,8 +18,8 @@
                 require_once "conn.php";
 
                 $email= $_POST['email'];
-                $senha= $_POST['senha'];
-                $query = mysqli_query($conexao,"SELECT * FROM t_usuario WHERE Email='$email' AND senha='$senha' AND     FkTipoUser=2");
+                $senha= md5(mysqli_real_escape_string($conexao,$_POST['senha']));
+                $query = mysqli_query($conexao,"SELECT * FROM t_usuario WHERE Email='$email' AND senha='$senha'");
                 $resultado = mysqli_num_rows($query);
 
                 if($resultado >0)
@@ -121,7 +121,7 @@
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <img src="public/assets/img/slide/remarS.jpg" class="img-fluid" alt=""> <br>
+                        <img src="public/assets/img/slide/remarSobre.jpg" class="img-fluid" alt=""> <br>
 
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 content">

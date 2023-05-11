@@ -27,7 +27,7 @@ body {
   }
   
   a:hover {
-    color: var(--primary-color)
+    color: var(--primary-color);
     text-decoration: none;
   }
   
@@ -356,7 +356,7 @@ body {
   
   #hero .carousel-item::before {
     content: "";
-    background-color: rgba(240, 10, 10, 0.359);
+    background-color: rgba(0, 10, 10, 0.359);
     position: absolute;
     top: 0;
     right: 0;

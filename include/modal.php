@@ -7,14 +7,18 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form class="user" id="form-logar" method="post">
+                <form class="user was-validated" id="form-logar" method="post" >
                     <div class="form-group">
                         <input type="email" class="form-control form-control-user" name="email"
-                            aria-describedby="emailHelp" placeholder="Ensira o teu Email">
+                            aria-describedby="emailHelp" placeholder="Ensira o teu Email" required>
+                            <!-- <div class="valid-feedback">Valid.</div> -->
+                         <div class="invalid-feedback">Ensira um email válido.</div>       
                     </div>
                     <div class="form-group">
                         <input type="password" class="form-control form-control-user" name="senha"
-                            placeholder="Password">
+                            placeholder="Password" required>
+                            <div class="valid-feedback">verificando.</div>
+                            <div class="invalid-feedback">Ensira a sua senha.</div> 
                     </div>
                     <div class="modal-footer">
                         <div>
@@ -40,7 +44,7 @@
             <div class="modal-bdy">
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <h3 class="h4 text-gray-700 mb-4">Dadas para usuario</h3>
+                        <h3 class="h4 text-gray-700 mb-4">Dados para usuario</h3>
                     </div>
                     <form id="form-register-user" class="user" method="post">
                         <!-- <div class="form-group row"> -->

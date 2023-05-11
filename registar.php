@@ -65,13 +65,10 @@
         <div class="row justify-content-center">
 
             <div class="col-xl-10 col-lg-12 col-md-9">
-
                 <div class="card o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-0">
-                  
                         <div class="row">
                             <!-- <div class="col-lg-6 .d-lg-block"><img src="img/remar2.jpg"  width="100%" alt="Logo da remar"></div> -->
-                            
                             <div class="col-lg-12">
                                 <div class="p-4">
                                     <div class="text-center">
@@ -116,7 +113,7 @@
                                                             name="Telefone" id="exampleInputPassword" placeholder="Telefone">
                                                     </div>
                                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                                        <input type="Enderenço" class="form-control form-control-user" name="Endereno" id="Enderenço"
+                                                        <input type="Enderenço" class="form-control form-control-user" name="Endereco" id="Enderenço"
                                                             placeholder="Enderenço">
                                                     </div>
                                                 </div>
@@ -138,11 +135,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     </div>
 </body>
 

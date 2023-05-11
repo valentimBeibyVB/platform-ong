@@ -1,4 +1,44 @@
-
+<?php
+     if(!empty($_POST))
+     { 
+         $alerta = '';
+         if(empty($_POST['Tipo']) ||empty($_POST['Descriacao']) || empty($_POST['Quantidade']) || empty($_POST['Imagem']))
+         {
+             $alerta = '<div class="alert alert-warning alert-dismissible fade show">
+             <strong>Todos os campos devem ser preechindos!</strong> 
+           </div>';
+         }else{
+             include "conn.php";
+ 
+             $tipo = $_POST['Tipo'];
+             $descriacao = $_POST['Descriacao'];
+             $quantidade = $_POST['Quantidade'];
+             $imagem = $_POST['Imagem'];
+             $_SESSION['IdUsuario']= $dados['idusuario'];
+             
+ 
+             $query = mysqli_query($conexao,"SELECT * FROM t_doar");
+             $resultado = mysqli_fetch_array($query);
+ 
+             if($resultado >0){
+                 $alerta = '<div class="alert alert-warning alert-dismissible fade show">
+                 <strong>Não foi possivel doar</strong> 
+               </div>';
+             }else{
+                 $query_ensirir = mysqli_query($conexao,"INSERT INTO t_doar('$tipo','$descriacao','$quantidade','$quantidade','1')");
+                 if($query_ensirir){
+                     $alerta = '<div class="alert alert-success alert-dismissible fade show">
+                     <strong>Doação efectuada com sucesso</strong> 
+                   </div>';
+                 }else{
+                     $alerta = '<div class="alert alert-danger alert-dismissible fade show">
+                     <strong>Erro ao doar!</strong> 
+                   </div>';
+                 }
+             }
+         }
+     }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,7 +83,7 @@
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch"> 
                         <div class="doacao">
-                            <img src="assets/img/team/afrianos.jpg" alt=""><br>
+                            <img src="../public/assets/img/team/afrianos.jpg" alt=""><br>
                             <br>
                             <span>Voluntarios da Remar leciona em comunidades desfavorecida</span>
                             <p>
@@ -76,7 +116,7 @@
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <img src="public/assets/img/slide/remar.jpg" class="img-fluid" alt=""> <br>
+                        <img src="../public/assets/img/slide/remarSobre.jpg" class="img-fluid" alt=""> <br>
 
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 content">
@@ -116,7 +156,7 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-file"></i></div>
-                            <h4><a href="">SAÚDE</a></h4>
+                            <h4><a href="">FINANCEIRA</a></h4>
                             <p>Precisa-se de medicamento para tratamento de paludismo</p> <br>
                             <a href="doar.php" class="getstarted">Doar</a>
                         </div>
@@ -125,7 +165,7 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-tachometer"></i></div>
-                            <h4><a href="">Magni Dolores</a></h4>
+                            <h4><a href="">VESTUARIO</a></h4>
                             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> <br>
                             <a href="doar.php" class="getstarted">Doar</a>
                         </div>
@@ -143,7 +183,7 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-slideshow"></i></div>
-                            <h4><a href="">Dele cardo</a></h4>
+                            <h4><a href="">FINANCEIRA</a></h4>
                             <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p><br>
                             <a href="doar.php" class="getstarted">Ajudar</a>
                         </div>
@@ -152,7 +192,7 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-arch"></i></div>
-                            <h4><a href="">Divera don</a></h4>
+                            <h4><a href="">MATERIAS</a></h4>
                             <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p><br>
                             <a href="doar.php" class="getstarted">Ajudar</a>
                         </div>
@@ -180,8 +220,10 @@
                 <div class="col-lg-12">
                     <form class="user" action="" method="post">
                         <!-- <div class="form-group row"> -->
-                        <div class="col-sm-2">
-                            <select class=" form-control form-control-user form-select form-group" id="doador" name="doador">
+                        
+                        <div class="col-sm-6 form-group">
+                        <label for="">Tipo de Doação</label> 
+                        <select class="form-select" id="doador" name="doador">
                             <option value="1">Vestuario</option>
                             <option value="2">Alimentação</option>
                             </select>

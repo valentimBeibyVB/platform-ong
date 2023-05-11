@@ -12,6 +12,7 @@
             {
                 $message = ['success'=> false, 'message'=>'Todos os dados deve ser preechindo'];
                 echo json_encode($message);
+                
             // $alerta = '<div class="alert alert-warning alert-dismissible fade show">
             //         <strong>Ensira o seu Email e a sua Senha!</strong> 
             //     </div>';
